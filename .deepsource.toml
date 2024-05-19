@@ -8,3 +8,6 @@ name = "javascript"
 
 [[transformers]]
 name = "prettier"
+
+[[analyzers]]
+name = "test-coverage"
