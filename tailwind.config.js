@@ -5,10 +5,10 @@ const {
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-      "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-      "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-      "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
-      "./src/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   darkMode: "class",
   theme: {
@@ -17,13 +17,13 @@ module.exports = {
   plugins: [addVariablesForColors],
 };
 
-function addVariablesForColors ({ addBase, theme }) {
-  let allColors = flattenColorPalette(theme("colors"))
+function addVariablesForColors({ addBase, theme }) {
+  let allColors = flattenColorPalette(theme("colors"));
   let newVars = Object.fromEntries(
-      Object.entries(allColors).map(([key, value]) => [`--${key}`, value])
-  )
+    Object.entries(allColors).map(([key, value]) => [`--${key}`, value]),
+  );
 
   addBase({
-      ":root": newVars
-  })
+    ":root": newVars,
+  });
 }
