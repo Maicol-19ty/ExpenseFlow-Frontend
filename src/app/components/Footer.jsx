@@ -8,7 +8,7 @@ function Index() {
                     <div className="xl:flex lg:flex md:flex pt-6">
                         <div className="w-11/12 xl:w-3/6 lg:w-2/5 mx-auto lg:mx-0 xl:mx-0">
                             <div className="flex items-center mb-6 xl:mb-0 lg:mb-0">
-                                <p className="ml-3 font-bold text-xl">ExpenseFlow</p>
+                                <a href="#" className="ml-3 font-bold text-xl">ExpenseFlow</a>
                             </div>
                         </div>
                         <div
@@ -19,13 +19,7 @@ function Index() {
                                     <a>About Us</a>
                                 </li>
                                 <li className="text-base text-gray-600 hover:text-gray-700 mb-5">
-                                    <a>Guidelines and how to</a>
-                                </li>
-                                <li className="text-base text-gray-600 hover:text-gray-700 mb-5">
-                                    <a>Quote from the best</a>
-                                </li>
-                                <li className="text-base text-gray-600 hover:text-gray-700 mb-5">
-                                    <a>How to start a blog</a>
+                                    <a>Blog</a>
                                 </li>
                             </ul>
                         </div>
@@ -37,19 +31,7 @@ function Index() {
                                     <a>About Us</a>
                                 </li>
                                 <li className="text-base text-gray-600 hover:text-gray-700 mb-5">
-                                    <a>Guidelines and how to</a>
-                                </li>
-                                <li className="text-base text-gray-600 hover:text-gray-700 mb-5">
-                                    <a>Quote from the best</a>
-                                </li>
-                                <li className="text-base text-gray-600 hover:text-gray-700 mb-5">
                                     <a>How to start a blog</a>
-                                </li>
-                                <li className="text-base text-gray-600 hover:text-gray-700 mb-5">
-                                    <a>Quote from the best</a>
-                                </li>
-                                <li className="text-base text-gray-600 hover:text-gray-700 mb-5">
-                                    <a>Guidelines and how to</a>
                                 </li>
                             </ul>
                         </div>
@@ -62,15 +44,6 @@ function Index() {
                                 </li>
                                 <li className="text-base text-gray-600 hover:text-gray-700 mb-5">
                                     <a>Usability</a>
-                                </li>
-                                <li className="text-base text-gray-600 hover:text-gray-700 mb-5">
-                                    <a>Marketplace</a>
-                                </li>
-                                <li className="text-base text-gray-600 hover:text-gray-700 mb-5">
-                                    <a>Design &amp; Dev</a>
-                                </li>
-                                <li className="text-base text-gray-600 hover:text-gray-700 mb-5">
-                                    <a>Marketplace</a>
                                 </li>
                             </ul>
                         </div>
@@ -134,7 +107,7 @@ function Index() {
                                     </a>
                                 </div>
                                 <div>
-                                    <a>
+                                    <a href="https://github.com/Maicol-19ty">
                                         <svg aria-label="Github" xmlns="http://www.w3.org/2000/svg" width={24}
                                              height={24} viewBox="0 0 24 24" fill="none" stroke="#718096"
                                              strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"
@@ -150,7 +123,9 @@ function Index() {
                 </div>
             </div>
             <div className="flex flex-col justify-center items-center">
-                <p className="mb-10 text-gray-800 text-base">2024 ExpenseFlow. All Rights Reserved</p>
+                <p className="mb-10 text-gray-800 text-base">
+                    © 2024 <a href="#" className="font-bold">ExpenseFlow</a>. All Rights Reserved
+                </p>
             </div>
         </div>
     );
